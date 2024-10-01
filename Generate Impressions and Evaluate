@@ -1,0 +1,9 @@
+# Generate impressions for the validation set
+generated_impressions = model.generate(
+    input_ids=tokenizer.encode_plus(val_data["History"], return_tensors="pt").input_ids,
+    num_beams=4,
+    max_length=100
+)
+
+# Evaluate the generated impressions
+# ...
