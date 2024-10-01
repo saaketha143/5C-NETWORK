@@ -1,0 +1,8 @@
+# Load the dataset
+data = pd.read_csv("your_dataset.csv")
+
+# Preprocess text (remove stop words, stemming/lemmatization)
+# ...
+
+# Split into training and validation sets
+train_data, val_data = train_test_split(data, test_size=0.2)
