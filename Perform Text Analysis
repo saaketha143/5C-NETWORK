@@ -1,0 +1,9 @@
+# Extract features using TF-IDF
+vectorizer = TfidfVectorizer()
+tfidf_matrix = vectorizer.fit_transform(data["Observation"])
+
+# Calculate cosine similarity
+cosine_sim = cosine_similarity(tfidf_matrix)
+
+# Identify top pairs
+top_pairs = ...
